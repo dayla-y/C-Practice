@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    // Pedir los dos números al usuario
+    printf("Ingrese el primer número: ");
+    scanf("%d", &num1);
+
+    printf("Ingrese el segundo número: ");
+    scanf("%d", &num2);
+
+    // Ordenar los números
+    if (num1 > num2) {
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+
+    // Imprimir los números ordenados
+    printf("%d\n%d\n", num1, num2);
+
+    return 0;
+}
