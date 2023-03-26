@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+
+    int n, i = 1, x = 0;
+    
+    scanf("%d", &n);
+    
+    if( n <= 0){
+        printf("Entrada no válida");
+        return 0;
+    }
+    
+    while (i <= n){
+        x += i;
+        i++;
+    }
+
+    printf("%d", x);
+    return 0;
+}
