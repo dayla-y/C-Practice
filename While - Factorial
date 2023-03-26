@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int num, fact = 1;
+    printf("Ingrese un numero entero positivo: ");
+    scanf("%d", &num);
+    if (num < 0) {
+        printf("Entrada no valida.\n");
+        return 0;
+    }
+    while (num > 0) {
+        fact *= num;
+        num--;
+    }
+    printf("El factorial es: %d\n", fact);
+    return 0;
+}
