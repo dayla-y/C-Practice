@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int resultado;
+    printf("Introduzca el resultado obtenido al lanzar el dado (1-6): ");
+    scanf("%d", &resultado);
+    
+    switch (resultado) {
+        case 1:
+            printf("El número de la cara opuesta es 6\n");
+            break;
+        case 2:
+            printf("El número de la cara opuesta es 5\n");
+            break;
+        case 3:
+            printf("El número de la cara opuesta es 4\n");
+            break;
+        case 4:
+            printf("El número de la cara opuesta es 3\n");
+            break;
+        case 5:
+            printf("El número de la cara opuesta es 2\n");
+            break;
+        case 6:
+            printf("El número de la cara opuesta es 1\n");
+            break;
+        default:
+            printf("ERROR dato incorrecto\n");
+    }
+    
+    return 0;
+}
