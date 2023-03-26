@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, num, suma = 0;
+    printf("Ingrese el número de valores que desea sumar: ");
+    scanf("%d", &n);
+    if (n <= 0) {
+        printf("Entrada no válida.\n");
+        return 0;
+    }
+    for (int i = 0; i < n; i++) {
+        printf("Ingrese el número %d: ", i+1);
+        scanf("%d", &num);
+        suma += num;
+    }
+    printf("La suma es: %d\n", suma);
+    return 0;
+}
