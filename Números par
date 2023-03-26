@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num, count = 0;
+
+    printf("Ingrese un numero entero positivo: ");
+    scanf("%d", &num);
+
+    if (num <= 0) {
+        printf("ERROR dato incorrecto\n");
+        return 0;
+    }
+
+    for (int i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+            count++;
+        }
+    }
+
+    printf("La cantidad de numeros pares desde 1 hasta %d es: %d\n", num, count);
+
+    return 0;
+}
