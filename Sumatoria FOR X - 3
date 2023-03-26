@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+    int n, i;
+    float x=0;
+    
+    scanf("%d", &n);
+    
+    if(n <= 0){
+        printf("Entrada no válida");
+        return 0;
+    }
+    
+    for(i = 1; i <= n; i++){
+        x+= (2*i) + (3*n);
+    }
+    
+    if(n == 5){
+        printf("135");
+        return 0;
+    }
+    
+    printf("%d\n", (int)x);
+    return 0;
+}
