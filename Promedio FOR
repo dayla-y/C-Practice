@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num, count = 0, sum = 0;
+
+    printf("Introduce números enteros positivos (introduce un número negativo para terminar):\n");
+
+    for (;;) {
+        scanf("%d", &num);
+
+        if (num < 0) {
+            break;
+        }
+
+        count++;
+        sum += num;
+    }
+
+    if (count > 0) {
+        int average = sum / count;
+        printf("El promedio es %d\n", average);
+    } else {
+        printf("No se introdujeron números enteros positivos\n");
+    }
+
+    return 0;
+}
