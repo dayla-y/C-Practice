@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    printf("Ingrese tres valores enteros separados por espacios: ");
+    scanf("%d %d %d", &a, &b, &c);
+    
+    if (a == b || a == c || b == c) {
+        printf("Secuencia no válida\n");
+    } else {
+        if (a > b) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+        if (b > c) {
+            int temp = b;
+            b = c;
+            c = temp;
+        }
+        if (a > b) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+        printf("%d\n%d\n%d\n", a, b, c);
+    }
+    
+    return 0;
+}
