@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char c;
+    int es_vocal = 0;
+    
+    while(!es_vocal) {
+        printf("Introduce una vocal minúscula: ");
+        scanf(" %c", &c);
+        
+        switch(c) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                es_vocal = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    
+    c = c - 'a' + 'A';
+    printf("La vocal en mayúscula es: %c", c);
+    
+    return 0;
+}
