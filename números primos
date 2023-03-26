@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int numero, i, j, es_primo;
+
+    printf("Ingrese un numero mayor a 0: ");
+    scanf("%d", &numero);
+
+    if (numero <= 0) {
+        printf("ERROR dato incorrecto\n");
+        return 0;
+    }
+
+    printf("Numeros primos del 1 al %d:\n", numero);
+
+    for (i = 2; i <= numero; i++) {
+        es_primo = 1; // Suponemos que i es primo hasta demostrar lo contrario
+
+        for (j = 2; j <= i / 2; j++) {
+            if (i % j == 0) {
+                es_primo = 0; // Si es divisible por otro número, entonces no es primo
+                break; // Salimos del ciclo interno
+            }
+        }
+
+        if (es_primo) {
+            printf("%d\n", i); // Imprimimos el número si es primo
+        }
+    }
+
+    return 0;
+}
