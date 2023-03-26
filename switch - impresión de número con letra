@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char letra;
+    int valor;
+
+    printf("Ingresa un valor entero positivo menor que 10 en minúsculas: ");
+    scanf(" %c", &letra);
+
+    switch (tolower(letra)) {
+        case '0':
+            valor = 0;
+            break;
+        case '1':
+            valor = 1;
+            break;
+        case '2':
+            valor = 2;
+            break;
+        case '3':
+            valor = 3;
+            break;
+        case '4':
+            valor = 4;
+            break;
+        case '5':
+            valor = 5;
+            break;
+        case '6':
+            valor = 6;
+            break;
+        case '7':
+            valor = 7;
+            break;
+        case '8':
+            valor = 8;
+            break;
+        case '9':
+            valor = 9;
+            break;
+        default:
+            printf("Entrada no valida\n");
+            return 0;
+    }
+
+    printf("El valor es: %d\n", valor);
+
+    return 0;
+}
